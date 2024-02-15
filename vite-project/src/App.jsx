@@ -1,7 +1,6 @@
-
-import { HeaderMain } from "./Pages";
+import { HeaderMain, SingleHeader, NotFoundPage, TopRated } from "./Pages";
 import { Footer, Header } from "./components";
-import { HomePage,AboutPage, InfoPage } from "./Pages";
+import { HomePage, AboutPage, InfoPage } from "./Pages";
 import { Routes } from "react-router";
 import { Route } from "react-router";
 function App() {
@@ -12,12 +11,10 @@ function App() {
         <Route element={<HomePage />} path="/" />
         <Route element={<AboutPage />} path="/about" />
         <Route element={<InfoPage />} path="/about/:id" />
-        <Route element={<HeaderMain/>} path="/about/:id" />
-        <Route element={<SingleHeader />} path="info/:id" />
-          <Route element={<Footer />} path="footer" />
-          <Route element={<NotFoundPage />} path="*" />
-          <Route element={<TopRated />} path="*" />
-          
+        <Route element={<HeaderMain />} path="/main/:id" />
+        <Route element={<SingleHeader />} path="/" />
+        <Route element={<NotFoundPage />} path="*" />
+        <Route element={<TopRated />} path="*" />
       </Routes>
       <Footer />
     </>
