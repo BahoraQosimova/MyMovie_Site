@@ -1,8 +1,17 @@
-const endPoints = {
-  popular: "/movie/popular",
-  top_rated: "/movie/top_rated",
-  upcoming: "/movie/upcoming",
-  ganerList: "/genre/movie/list",
-  getSingle: (MovieID) => `/movie/${MovieID}`,
-};
+import { component } from "react";
+
+class endPoint extends component {
+  topRated = () => {
+    return "movie/top_rated";
+  };
+
+  upComing = () => {
+    return "movie/upcoming";
+  };
+
+  popular = () => {
+    return "/movie/popular";
+  };
+}
+
 export default endPoints;

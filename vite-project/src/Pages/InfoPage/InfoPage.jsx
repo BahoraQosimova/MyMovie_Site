@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
-import { Movie } from "../../services/serviceApi";
+import { Movie } from "../../service/serviceApi";
 import { useEffect, useState } from "react";
-import { imageW500 } from "../../utils/ImageUrl";
+import { imageW500 } from "../../utils/imgURL";
 import "./infoPage.css";
 
 const InfoPage = () => {

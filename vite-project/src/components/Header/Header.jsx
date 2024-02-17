@@ -1,6 +1,5 @@
-import { Logo } from "../../assets";
+import { Logo } from "../../assets/Logo.jpg";
 import { Link } from "react-router-dom";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -24,9 +23,7 @@ const Header = () => {
         <ul className="nav_item">
           <li>Bosh Sahifa</li>
           <li>About</li>
-          <li>
-            <FontAweSomeIcon icon={faSearch} />
-          </li>
+          <li></li>
         </ul>
       </div>
     </header>

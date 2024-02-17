@@ -1,8 +1,14 @@
-import { HeaderMain, SingleHeader, NotFoundPage, TopRated } from "./Pages";
-import { Footer, Header } from "./components";
-import { HomePage, AboutPage, InfoPage } from "./Pages";
-import { Routes } from "react-router";
-import { Route } from "react-router";
+import { Route, Routes } from "react-router";
+
+import {
+  HomePage,
+  AboutPage,
+  SinglePage,
+  NotFoundPage,
+  InfoPage,
+} from "./Pages/index";
+import Header from "./components/Header/Header";
+
 function App() {
   return (
     <>
@@ -10,14 +16,13 @@ function App() {
       <Routes>
         <Route element={<HomePage />} path="/" />
         <Route element={<AboutPage />} path="/about" />
-        <Route element={<InfoPage />} path="/about/:id" />
-        <Route element={<HeaderMain />} path="/main/:id" />
-        <Route element={<SingleHeader />} path="/" />
+        <Route element={<SinglePage />} path="/singlePage/:id" />
+        <Route element={<InfoPage />} path="/info" />
+
         <Route element={<NotFoundPage />} path="*" />
-        <Route element={<TopRated />} path="*" />
       </Routes>
-      <Footer />
     </>
   );
 }
+
 export default App;

@@ -1,0 +1,38 @@
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.header_logo {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.header_logo h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.header_logo span {
+  color: rgb(67, 69, 182);
+}
+.header_logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30%;
+}
+.nav_menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav_menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}

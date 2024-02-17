@@ -1,10 +1,10 @@
-import { Component } from "react";
-import { Axios } from "./axios";
+import { component } from "react";
+import { axios } from "./Axios";
 import { endPoints } from "./endPoint";
-class Movie extends Component {
+class Movie extends component {
   async getPopular() {
     try {
-      const response = await Axios.get(endPoints.popular);
+      const response = await axios.get(endPoints.popular);
       return { response };
     } catch (error) {
       return { error };
@@ -12,7 +12,7 @@ class Movie extends Component {
   }
   async getTopRated() {
     try {
-      const response = await Axios.get(endPoints.top_rated);
+      const response = await axios.get(endPoints.top_rated);
       return { response };
     } catch (error) {
       return { error };
@@ -20,7 +20,7 @@ class Movie extends Component {
   }
   async getGanres() {
     try {
-      const response = await Axios.get(endPoints.ganerList);
+      const response = await axios.get(endPoints.ganerList);
       return { response };
     } catch (error) {
       return { error };
@@ -28,7 +28,7 @@ class Movie extends Component {
   }
   async getUpcoming() {
     try {
-      const response = await Axios.get(endPoints.upcoming);
+      const response = await axios.get(endPoints.upcoming);
       return { response };
     } catch (error) {
       return { error };
@@ -36,7 +36,7 @@ class Movie extends Component {
   }
   async getSingle(id) {
     try {
-      const response = await Axios.get(endPoints.getSingle(id));
+      const response = await axios.get(endPoints.getSingle(id));
       return { response };
     } catch (error) {
       return { error };
