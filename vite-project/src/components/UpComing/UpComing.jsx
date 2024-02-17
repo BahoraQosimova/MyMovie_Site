@@ -12,7 +12,7 @@ const Upcoming = () => {
   };
 
   useEffect(() => {
-    newMovies();
+    setSoon();
   }, []);
 
   return <div></div>;
